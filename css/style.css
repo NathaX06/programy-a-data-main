@@ -1,19 +1,23 @@
 header {
-    background-color: rgb(40, 96, 210);
+    background-color: #2860d2;
     padding: 10px;
     text-align: center;
     font-weight: bold;
 }
 
+body {
+    background-image: url(../img/paper-backgroud.jpg);
+}
 
-
-main {
+.main {
     width: 50%;
     margin: auto;
-    
-
-    background-color: #35281D;
-    color: #ebded0;
+    margin-top: 7px;
+    background-color: #00000080;
+    border: #000 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
 }
 
 h1,
@@ -23,10 +27,11 @@ h3 {
 }
 
 h1 {
-    color: white;
+    color: #fff;
 }
 
-p {
+p,
+li {
     font-family: "Google Sans", sans-serif;
     font-size: 18px;
     line-height: 1.6;
@@ -34,11 +39,12 @@ p {
 }
 
 .zpet {
-    color: black;
+    color: #fff;
     text-align: center;
     font-weight: 900;
-    text-size-adjust: 10000px;
-    width: 10000px;
+    border: 1px #000 solid;
+    background-color: #000;
+    border-radius: 15px;
 }
 
 .naklonene {
@@ -50,26 +56,25 @@ p {
     font-weight: 800;
 }
 
-table {
-    font-family: Arial, Helvetica, sans-serif;
+.odkazy {
+    text-decoration: none;
+    color: #34E5FF
+}
+code {
+    background-color: hsla(0, 0%, 0%, 0.500);
 }
 
-table,
-th,
-td {
-    border: 1px solid black;
-    border-collapse: collapse;
+figure {
+    font-family: "Google Sans", sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    
 }
 
-th,
-td {
-    padding: 12px;
+figcaption {
+    font-style: italic ;
 }
-
-thead {
-    background-color: #a00;
-    color: white;
-}
+/*Fonty*/
 
 .google-sans-font {
     font-family: "Google Sans", sans-serif;
@@ -85,6 +90,30 @@ thead {
   font-style: normal;
 }
 
+/*Tabulka*/
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table,
+td {
+    background-color: #3185FC;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid black;
+}
+
+thead {
+    background-color: #0602c5;
+    color: white;
+}
+
  /*Container*/
 
     .container {
@@ -92,7 +121,6 @@ thead {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      background-color: #ADBDFF;
       width: 100%;
       min-height: 600px;
     }
@@ -111,14 +139,15 @@ thead {
     }
 
     .container div:hover {
-      background-color: #224fe493;
+      background-color: #214ee4;
+      scale: 105%;
+      transition: 0.3s;
     }
 
 
     @media (max-width: 960px) {
       .container {
         flex-direction: row;
-        background-color: rgb(89, 192, 41);
       }
 
       .container div {
@@ -130,14 +159,12 @@ thead {
     @media (max-width: 600px) {
       .container {
         flex-direction: column;
-        background-color: rgb(169, 91, 214);
       }
 
       .container div {
         width: auto;
       }
     }
-
 
 /* Navigace*/
 .topnav {
@@ -157,15 +184,16 @@ thead {
     font-size: 17px;
 }
 
-.topnav a:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-
-}
-
 .topnav a.active {
     background-color: #2487f8;
     color: white;
+}
+
+.topnav a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    scale: 105%;
+    transition: 0.3s;
 }
 
 .topnav .icon {
